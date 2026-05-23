@@ -1,0 +1,20 @@
+server:
+  port: 8080
+  mode: debug
+
+database:
+  file: "data/blog.db"
+  max_idle_conns: 10
+  max_open_conns: 100
+
+jwt:
+  secret: "blog-jwt-secret-key-change-in-production"
+  expire_hours: 24
+
+log:
+  level: debug
+  file: "./logs/app.log"
+
+cors:
+  allow_origins:
+    - "http://localhost:5173"
